@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 # Add shared utilities to path
-sys.path.append(str(Path(__file__).parent.parent.parent / "shared"))
+sys.path.append(str(Path(__file__).parent.parent / "shared"))
 
 from utils.api_client import get_free_llm_client
 

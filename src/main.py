@@ -56,7 +56,7 @@ async def read_root():
     """Serve the main HTML interface."""
     html_path = Path(__file__).parent.parent / "frontend" / "index.html"
     if html_path.exists():
-        return html_path.read_text()
+        return html_path.read_text(encoding="utf-8")
     
     # Fallback HTML
     return """
